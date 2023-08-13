@@ -1,0 +1,141 @@
+@font-face {
+  font-family: two;
+  src: url(/subset-Plakkaat-Italic.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+  }
+
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(206, 191, 191);
+    font-family: gilroy;
+  }
+  
+  .main {
+    overflow:hidden;
+    background-color: rgb(200, 191, 191);
+  }
+  #page1>.nav{
+    position: relative;
+    z-index: 9999;
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+  }
+  #page1>.nav>.left{
+    display: flex;
+    gap: 20px;
+}
+#page1>.nav>.left>.icon{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: -10px;
+    color: #F4541C;
+    font-family: two;
+    font-size: 67px;
+}
+#page1>.nav>.left>.icon>p{
+    line-height: 15px;
+    font-weight: 400;
+}
+#page1>.nav>.left>h2{
+    cursor: pointer;
+    margin-top: 6px;
+    font-family: two;
+    font-size: 22px;
+    font-weight: 400;
+    color: #F4541C;
+    letter-spacing: 1px;
+
+}
+#page1>.nav>.right>h3{
+    margin-top: 6px;
+    font-family: two;
+    font-size: 22px;
+    font-weight: 400;
+    color: #F4541C;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#page1>.nav>.right>h3>span{
+    color: black;
+}
+#page1>.nav>.right>h3>span:hover{
+    color: #F4541C;
+}
+  /* // page 1  */
+#page1{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #F5F4EA;
+}
+#page1>svg{
+  scale: .23;
+  margin-top: -15.5%;
+  fill: #F4541C;
+
+
+}
+
+#page1 .circle{
+  width: 400vh;
+  height: 400vh;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%,0%);
+}
+.circle-item{
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(0%,-50%);
+  transform-origin: 0% 50%;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  /* background-color: blueviolet; */
+}
+.circle-item .circle-left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 2.3%;
+}
+#page1  .circle-item .circle-left img{
+  width:23%;
+  object-fit: cover;
+  rotate: 90deg;
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 40px rgb(106, 106, 106));
+}
+#page1 .scrolling{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-family: as;
+  font-size: 1.3vmax;
+  color: rgb(34, 34, 34);
+  transform: translate(-50%,0%);
+}
